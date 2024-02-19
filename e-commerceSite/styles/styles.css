@@ -1,0 +1,113 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background: white;
+    margin: 0; 
+}
+
+.hero-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* width: 1440px; */
+    height: 800px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background-size: cover;
+}
+
+.navigation-bar {
+    grid-column: span 2; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.align-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.column {
+    flex: 1;
+}
+
+.images img {
+    max-width: 100%;
+}
+.introduction{
+    margin-left: 124px;
+    width: 387px;
+}
+.brand{
+    font-weight: 700;
+    font-size: 55px;
+    color: #000;
+}
+.description{
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.78);
+}
+.buy-now-button{
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+    width: 94px;
+    height: 42px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background: #000;
+}
+.buy-now{
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    color: #fff1f1;
+    backdrop-filter: blur(4px);
+}
+
+.images{
+    margin-left: 500px;
+    display: flex;
+    gap: 32px;
+}
+.redPen{
+    width:372px;
+    height:454px;
+    margin-bottom: 230px;
+    margin-left: -8px;
+    margin-top: +50px;
+}
+.bluePen{
+    width:394px;
+    height:400px;
+    margin-bottom: 230px;
+    margin-left: +28px;
+    margin-top: +60px;
+}
+.blackPen{
+    width:308px;
+    height:300px;
+    margin-bottom: 230px;
+    margin-top: 80px;
+    margin-left: -18px;
+}
+.footer {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Updated to six equal columns */
+    /* width: 1440px; */
+    height: 178px;
+    background: rgba(160, 166, 187, 0.4);
+}
+
+.footer-text {
+    grid-column: span 1;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    color: #000;
+}
