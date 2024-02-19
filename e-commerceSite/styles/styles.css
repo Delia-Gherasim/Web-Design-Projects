@@ -4,6 +4,8 @@ body {
     margin: 0; 
 }
 
+
+/* hero section */
 .hero-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -12,7 +14,6 @@ body {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     background-size: cover;
 }
-
 .navigation-bar {
     grid-column: span 2; 
     display: flex;
@@ -20,13 +21,11 @@ body {
     align-items: center;
     padding: 20px;
 }
-
 .align-row{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
 }
-
 .row:after {
     content: "";
     display: table;
@@ -35,7 +34,6 @@ body {
 .column {
     flex: 1;
 }
-
 .images img {
     max-width: 100%;
 }
@@ -44,6 +42,7 @@ body {
     width: 387px;
 }
 .brand{
+    margin-top: 178px;
     font-weight: 700;
     font-size: 55px;
     color: #000;
@@ -52,6 +51,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     color: rgba(0, 0, 0, 0.78);
+    margin-top: 40px;
 }
 .buy-now-button{
     border: 1px solid #000;
@@ -61,6 +61,7 @@ body {
     height: 42px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     background: #000;
+    margin-top: 40px;
 }
 .buy-now{
     font-weight: 600;
@@ -69,7 +70,6 @@ body {
     color: #fff1f1;
     backdrop-filter: blur(4px);
 }
-
 .images{
     margin-left: 500px;
     display: flex;
@@ -96,10 +96,59 @@ body {
     margin-top: 80px;
     margin-left: -18px;
 }
+
+
+/*Best Sales and New Addition Sections  */
+.special-items-section{
+    margin-top: 120px;
+    margin-left: 127px;
+}
+.itemsRow{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.secondary-title{
+font-weight: 700;
+font-size: 40px;
+text-align: center;
+color: #000;
+}
+
+.item{
+    grid-column: span 1;
+    display: flex;
+    padding: 16px;
+    align-items: center;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+background: #fff;
+border-radius: 12px;
+width: 274px;
+height: 531px;
+margin-top: 50px;
+}
+.item-image{
+    width: 274px;
+height: 447px;
+}
+.item-name{
+font-weight: 700;
+font-size: 30px;
+text-align: center;
+color: #000;
+margin-top: 12px;
+}
+.item-price{
+font-weight: 500;
+font-size: 20px;
+text-align: center;
+color: #5e5e5e;
+margin-top: 12px;
+}
+
+/* footer section */
 .footer {
     display: grid;
-    grid-template-columns: repeat(6, 1fr); /* Updated to six equal columns */
-    /* width: 1440px; */
+    grid-template-columns: repeat(6, 1fr);
     height: 178px;
     background: rgba(160, 166, 187, 0.4);
 }
