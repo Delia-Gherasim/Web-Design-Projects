@@ -71,7 +71,8 @@ body {
     backdrop-filter: blur(4px);
 }
 .images{
-    margin-left: 500px;
+    margin-top: -60px;
+    margin-left: 400px;
     display: flex;
     gap: 32px;
 }
@@ -79,14 +80,13 @@ body {
     width:372px;
     height:454px;
     margin-bottom: 230px;
-    margin-left: -8px;
     margin-top: +50px;
 }
 .bluePen{
     width:394px;
     height:400px;
     margin-bottom: 230px;
-    margin-left: +28px;
+    margin-left: +20px;
     margin-top: +60px;
 }
 .blackPen{
@@ -94,59 +94,141 @@ body {
     height:300px;
     margin-bottom: 230px;
     margin-top: 80px;
-    margin-left: -18px;
+    margin-left: -30px;
 }
 
 
 /*Best Sales and New Addition Sections  */
 .special-items-section{
     margin-top: 120px;
-    margin-left: 127px;
+    margin-left: 60px;
 }
 .itemsRow{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    padding-right: 32px;
 }
 .secondary-title{
-font-weight: 700;
-font-size: 40px;
-text-align: center;
-color: #000;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    color: #000;
 }
-
-.item{
+.item {
     grid-column: span 1;
+    grid-template-rows: repeat(3, 1fr);
     display: flex;
-    padding: 16px;
+    flex-direction: column; 
     align-items: center;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-background: #fff;
-border-radius: 12px;
-width: 274px;
-height: 531px;
-margin-top: 50px;
+    background: #fff;
+    border-radius: 12px;
+    width: 274px;
+    height: 531px;
+    margin-top: 50px;
 }
 .item-image{
-    width: 274px;
-height: 447px;
+    width: 200px;
+    height: 400px;
+    grid-row: span 1;
 }
 .item-name{
-font-weight: 700;
-font-size: 30px;
-text-align: center;
-color: #000;
-margin-top: 12px;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    color: #000;
+    /* margin-top: 12px; */
+    grid-row: span 1;
 }
 .item-price{
-font-weight: 500;
-font-size: 20px;
-text-align: center;
-color: #5e5e5e;
-margin-top: 12px;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    color: #5e5e5e;
+    /* margin-top: 12px; */
+    grid-row: span 1;
 }
+
+/* special offer section */
+.special-offer {
+    position: relative; /* Ensure positioning context for child elements */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 3px 14px 32px 0 rgba(1, 0, 77, 0.25), 13px 57px 59px 0 rgba(1, 0, 77, 0.21), 29px 129px 79px 0 rgba(1, 0, 77, 0.13), 51px 228px 94px 0 rgba(1, 0, 77, 0.04), 80px 357px 102px 0 rgba(1, 0, 77, 0);
+    background: #4f5362;
+    border: 1px solid #000;
+    border-radius: 24px;
+    width: 1192px;
+    height: 477px;
+    margin-left: 60px;
+    margin-top: 120px;
+}
+
+.image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 462px;
+    height: 262px;
+    filter: blur(200px);
+    background: #6f7aa3;
+    z-index: 1; 
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    position: relative; 
+    z-index: 2;
+}
+
+.right-side {
+    flex: 1;
+    padding: 40px; 
+}
+
+.special-offer-name {
+    font-weight: 700;
+    font-size: 60px;
+    letter-spacing: 0.05em;
+    text-align: right;
+    color: #fff1f1;
+}
+
+.add-to-cart {
+    border-radius: 10px;
+    padding: 10px;
+    width: 163px;
+    height: 44px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background: #fff1f1;
+    margin-top: 20px; 
+    margin-left: 400px; 
+    /* align-items: right; */
+}
+
+.special-offer-description {
+    font-weight: 500;
+    font-size: 20px;
+    text-align: right;
+    color: #fff;
+}
+
+.button-add-to-cart-text {
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #4f5362;
+}
+
 
 /* footer section */
 .footer {
+    margin-top: 120px;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     height: 178px;
